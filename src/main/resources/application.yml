@@ -1,0 +1,11 @@
+#默认的启动方式 dev
+spring:
+  cloud:
+    config:
+      #路径有问题会报错 最好直接复制浏览器的路径过来
+      uri: http://localhost:8888/
+      #云端配置文件的名字
+      name: iToken-Zipkin
+      label: master
+      #开发阶段的profile(测试阶段test,发布阶段：prod)
+      profile: dev
